@@ -5,7 +5,7 @@ function Home() {
 
   const handleButton = () => {
     setText("Acho bom, eu mando e você obedece");
-  }
+  };
 
   return (
     <div>
