@@ -16,7 +16,6 @@ async function status(resquest, response) {
     text: "SELECT count(*)::int FROM pg_stat_activity WHERE datname = $1;",
     values: [dbName],
   });
-  // "SELECT count(*)::int FROM pg_stat_activity WHERE datname = 'local_db';",
 
   const dbOpenedConnectionsValue = dbOpenedConnectionsResult.rows[0].count;
 
